@@ -13,10 +13,6 @@ html {
 
   height: 100%;
 
-  @media (min-width: 1680px) {
-    --wrapper-width: #{$wrapper-width-wide};
-  }
-
   @media (max-width: 767px) {
     --wrapper-padding: #{$wrapper-padding-mobile};
   }

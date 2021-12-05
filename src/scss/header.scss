@@ -122,12 +122,8 @@
     transform: translate(-5px, 9px);
     right: $wrapper-padding;
 
-    @media (min-width: 1680px) {
-      right: 8vw;
-    }
-
     @media (max-width: 1179px) {
-      right: $wrapper-padding-mobile;
+      right: var(--wrapper-padding);
     }
 
     &::before,
