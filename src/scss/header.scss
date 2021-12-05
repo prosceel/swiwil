@@ -120,6 +120,10 @@
     transform: translate(-5px, 9px);
     right: $wrapper-padding;
 
+    @media (max-width: 1179px) {
+      right: $wrapper-padding-mobile;
+    }
+
     &::before,
     &::after {
       position: absolute;

@@ -1,5 +1,14 @@
 .feed {
   padding-left: 51px;
+
+  @media (max-width: 767px) {
+    padding: 0;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .feed-switcher {
@@ -79,6 +88,22 @@
   grid-gap: 24px;
   padding: 63px 5px 0 0;
 
+  @media (max-width: 1179px) {
+    padding: 50px 0 0 0;
+    grid-template-columns: repeat(4, 100%);
+    grid-template-rows: 280px;
+    grid-gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    width: 46vw;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -87,6 +112,12 @@
     border-radius: 8px;
     padding: 0 24px 24px;
     position: relative;
+    cursor: pointer;
+    scroll-snap-align: start;
+
+    @media (max-width: 1179px) {
+      box-shadow: none;
+    }
   }
 
   &__item-text {
@@ -98,6 +129,10 @@
     letter-spacing: 0px;
     text-align: left;
     margin: 56px 0 0;
+
+    @media (max-width: 374px) {
+      font-size: 30px;
+    }
   }
 
   &__item-description {
@@ -174,6 +209,14 @@
     letter-spacing: 0.4px;
     text-align: left;
 
+    @media (max-width: 424px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 13px;
+    }
+
     &--is-with-link {
       display: flex;
       align-items: center;
@@ -193,6 +236,14 @@
     z-index: 3;
     margin-left: 4px;
     letter-spacing: 0.3px;
+
+    @media (max-width: 424px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 12px;
+    }
 
     &::after {
       position: absolute;
