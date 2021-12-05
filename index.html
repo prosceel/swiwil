@@ -11,9 +11,9 @@
     </head>
 
     <body>
-        <header class="header">
+        <header class="header header--is-desktop">
             <div class="header-info wrapper">
-                <img src="/src/image/logo.svg" alt="main-logo" class="header-info__logo">
+                <a href="/"><img src="/src/image/logo.svg" alt="main-logo" class="header-info__logo"></a>
                 <div class="header-info-profile">
                     <div class="header-info-profile__user">
                         <span class="header-info-profile__user-name">Arthur Wood</span>
@@ -46,6 +46,46 @@
                 </ul>
                 <button class="header-navigation__add-button"></button>
             </div>
+        </header>
+        <header class="mobile-header header--is-mobile">
+            <div class="mobile-header__burger">
+                <span class="mobile-header__burger-item"></span>
+                <span class="mobile-header__burger-item"></span>
+                <span class="mobile-header__burger-item"></span>
+            </div>
+            <a href="/"><img src="/src/image/logo.svg" alt="main-logo" class="header-info__logo"></a>
+            <img class="header-info-profile__user-avatar" src="/src/image/small-avatar.jpg" alt="small-avatar" />
+            <div class="mobile-header-menu">
+                <div class="mobile-header-menu__profile">
+                    <img class="header-info-profile__user-avatar" src="/src/image/small-avatar.jpg"
+                        alt="small-avatar" />
+                    <span class="header-info-profile__user-name">Arthur Wood</span>
+                    <button class="header-navigation__add-button"></button>
+                </div>
+                <ul class="mobile-header-menu__links">
+                    <li class="mobile-header-menu__links-item"><a href="/"
+                            class="mobile-header-menu__links-item-link">Notifications</a><img
+                            src="/src/image/notifications.svg" alt="notifications" /></li>
+                    <li class="mobile-header-menu__links-item"><a href="/"
+                            class="mobile-header-menu__links-item-link">Gift</a><img src="/src/image/gift.svg"
+                            alt="gifts" /></li>
+                    <li class="mobile-header-menu__links-item"><a href="/"
+                            class="mobile-header-menu__links-item-link">Medium</a><img src="/src/image/medium.svg"
+                            alt="medium" /></li>
+                </ul>
+                <ul class="mobile-header-menu__navigation">
+                    <li class="mobile-header-menu__navigation-item">
+                        <a href="/" class="mobile-header-menu__navigation-item-link">feed</a>
+                    </li>
+                    <li class="mobile-header-menu__navigation-item">
+                        <a href="/" class="mobile-header-menu__navigation-item-link">explore</a>
+                    </li>
+                    <li class="mobile-header-menu__navigation-item">
+                        <a href="/" class="mobile-header-menu__navigation-item-link">discussions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-header-menu__overlay"></div>
         </header>
         <main class="main wrapper">
             <section class="profile">
