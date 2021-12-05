@@ -12,6 +12,7 @@
 
   &__logo {
     margin-left: 5px;
+    margin-top: 7px;
   }
 }
 
@@ -64,6 +65,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 16px;
+  position: relative;
 
   &__links {
     display: flex;
