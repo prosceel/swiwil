@@ -47,7 +47,124 @@
                 <button class="header-navigation__add-button"></button>
             </div>
         </header>
-        <main></main>
+        <main class="main wrapper">
+            <section class="profile">
+                <div class="profile-details">
+                    <img class="profile-details__avatar" src="/src/image/avatar.jpg" alt="avatar" />
+                    <div class="profile-details-texts">
+                        <h3 class="profile-details-texts__name">Benjamin Clementine</h3>
+                        <span class="profile-details-texts__nick">@benclementine</span>
+                        <button class="profile-details-texts__edit-button">
+                            <img class="profile-details-texts__edit-button-logo" src="/src/image/edit.svg"
+                                alt="edit-logo" />
+                            <span class="profile-details-texts__edit-button-text">Edit Profile</span>
+                        </button>
+                    </div>
+                    <div class="profile-details__actions"><img class="profile-details__actions-logo"
+                            src="/src/image/3-dots.svg" alt="3-dots" />
+                        <ul class="profile-details__actions-menu">
+                            <li class="profile-details__actions-menu-item">
+                                <button class="profile-details__actions-menu-item-button"><img
+                                        src="/src/image/report.svg" alt="report" /><span>Report User</span></button>
+                            </li>
+                            <li class="profile-details__actions-menu-item">
+                                <button class="profile-details__actions-menu-item-button"><img
+                                        src="/src/image/block-user.svg" alt="block-user"
+                                        class="profile-details__actions-menu-item-button-block-logo" /><span>Block
+                                        User</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="profile-followers">
+                    <li class="profile-followers__item">
+                        <span class="profile-followers__item-number">45</span>
+                        <span class="profile-followers__item-label">synths</span>
+                    </li>
+                    <li class="profile-followers__item">
+                        <span class="profile-followers__item-number">110</span>
+                        <span class="profile-followers__item-label">followers</span>
+                    </li>
+                    <li class="profile-followers__item">
+                        <span class="profile-followers__item-number">322</span>
+                        <span class="profile-followers__item-label">following</span>
+                    </li>
+                </ul>
+                <p class="profile__description">Cryptocurrencies including Ethereum, Ripple, and Litecoin have all
+                    plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price
+                    news and live updates on XRP, bitcoin and Ethereum.</p>
+            </section>
+            <section class="feed">
+                <div class="feed-switcher">
+                    <span class="feed-switcher__text">Public</span>
+                    <label class="feed-switcher__item">
+                        <input type="checkbox">
+                        <span class="feed-switcher__item-slider"></span>
+                    </label>
+                    <span class="feed-switcher__text">Private</span>
+                </div>
+                <ul class="feed-gallery">
+                    <li class="feed-gallery__item">
+                        <p class="feed-gallery__item-text">New air routes that promise cheap flights in</p>
+                        <div class="feed-gallery__item-description">
+                            <img class="feed-gallery__item-description-avatar" src="/src/image/grey-ava.svg"
+                                alt="avatar">
+                            <span class="feed-gallery__item-description-author">Gregory Watkins</span>
+                            <button class="feed-gallery__item-description-share">Share</button>
+                        </div>
+                    </li>
+                    <li class="feed-gallery__item">
+                        <p class="feed-gallery__item-text">New air routes that promise cheap flights in</p>
+                        <div class="feed-gallery__item-description">
+                            <img class="feed-gallery__item-description-avatar" src="/src/image/grey-ava.svg"
+                                alt="avatar">
+                            <span class="feed-gallery__item-description-author">Gregory Watkins</span>
+                            <button class="feed-gallery__item-description-share">Share</button>
+                        </div>
+                    </li>
+                    <li class="feed-gallery__item">
+                        <div class="feed-gallery__item-share">
+                            <span class="feed-gallery__item-share-text">Shared to</span>
+                            <span class="feed-gallery__item-share-method">#discussionaboutanimgttdds…</span>
+                        </div>
+                        <p class="feed-gallery__item-text">New air routes that promise cheap flights in</p>
+                        <div class="feed-gallery__item-description">
+                            <img class="feed-gallery__item-description-avatar" src="/src/image/grey-ava.svg"
+                                alt="avatar">
+                            <span class="feed-gallery__item-description-author">Gregory Watkins</span>
+                            <div class="feed-gallery__item-description-stats">
+                                <img class="feed-gallery__item-description-stats-views" src="/src/image/play.svg"
+                                    alt="play" />
+                                <span class="feed-gallery__item-description-stats-number">88</span>
+                                <img class="feed-gallery__item-description-stats-likes" src="src/image/like.svg"
+                                    alt="like" />
+                                <span class="feed-gallery__item-description-stats-number">24</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="feed-gallery__item">
+                        <div class="feed-gallery__item-share">
+                            <span class="feed-gallery__item-share-text"><img src="/src/image/share-with-link.svg"
+                                    alt="shared with link" />Shared via weblink</span>
+                        </div>
+                        <p class="feed-gallery__item-text">New air routes that promise cheap flights in</p>
+                        <div class="feed-gallery__item-description">
+                            <img class="feed-gallery__item-description-avatar" src="/src/image/grey-ava.svg"
+                                alt="avatar">
+                            <span class="feed-gallery__item-description-author">Gregory Watkins</span>
+                            <div class="feed-gallery__item-description-stats">
+                                <img class="feed-gallery__item-description-stats-views" src="/src/image/play.svg"
+                                    alt="play" />
+                                <span class="feed-gallery__item-description-stats-number">88</span>
+                                <img class="feed-gallery__item-description-stats-likes" src="src/image/like.svg"
+                                    alt="like" />
+                                <span class="feed-gallery__item-description-stats-number">24</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
         <footer class="footer"></footer>
     </body>
     <script type="text/javascript" src="dist/index.js" defer></script>

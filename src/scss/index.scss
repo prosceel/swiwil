@@ -3,6 +3,8 @@
 @import "/src/scss/variables";
 
 @import "/src/scss/header";
+@import "/src/scss/profile";
+@import "/src/scss/feed";
 
 html {
   --wrapper-width: #{$wrapper-width};
@@ -13,6 +15,10 @@ html {
   @media (min-width: #{1180px + $wrapper-padding * 2}) {
     --wrapper-width: #{$wrapper-width-wide};
   }
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 .wrapper {
@@ -32,4 +38,10 @@ html {
     padding-right: 15px;
     max-width: var(--wrapper-width);
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 72px $wrapper-padding;
 }
