@@ -102,9 +102,7 @@
   }
 
   &__actions {
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       .profile-details__actions-menu {
         opacity: 0.94;
         pointer-events: unset;
