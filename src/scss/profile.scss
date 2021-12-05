@@ -3,6 +3,11 @@
   width: 100%;
   padding-left: 6px;
 
+  @media (max-width: 1179px) {
+    max-width: 100%;
+    padding: 0;
+  }
+
   &__description {
     font-family: $opensans;
     font-size: 16px;
@@ -32,6 +37,10 @@
     cursor: pointer;
     position: relative;
     margin: 4px 0 0 31px;
+
+    @media (max-width: 767px) {
+      margin: 4px 0 0 auto;
+    }
   }
 
   &__actions-menu {
@@ -49,6 +58,12 @@
     backdrop-filter: blur(21.7463px);
     border-radius: 8px;
     z-index: 2;
+    pointer-events: none;
+
+    @media (max-width: 767px) {
+      right: -10px;
+      left: unset;
+    }
   }
 
   &__actions-menu-item {
@@ -87,12 +102,19 @@
   }
 
   &__actions {
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       .profile-details__actions-menu {
         opacity: 0.94;
+        pointer-events: unset;
       }
     }
   }
+}
+
+.profile-details__actions:hover + .profile-details__actions-menu {
+  opacity: 0.94;
 }
 
 .profile-details-texts {
@@ -155,6 +177,10 @@
   justify-content: space-between;
   padding: 0 62px 0 2px;
   margin: 33px 0 0;
+
+  @media (max-width: 767px) {
+    padding: 0 10px;
+  }
 
   &__item {
     display: flex;

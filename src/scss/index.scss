@@ -34,9 +34,9 @@ body {
     max-width: 100%;
   }
 
-  @media (max-width: 1209px) {
-    padding-left: 15px;
-    padding-right: 15px;
+  @media (max-width: 1179px) {
+    padding-left: $wrapper-padding-mobile;
+    padding-right: $wrapper-padding-mobile;
     max-width: var(--wrapper-width);
   }
 }
@@ -58,7 +58,13 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-  padding: 72px $wrapper-padding;
+  padding-top: 72px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
 }
 
 .modal--is-opened {
